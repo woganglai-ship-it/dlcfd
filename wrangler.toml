@@ -1,6 +1,9 @@
 name = "dlcfd"
+main = "worker.js"
 compatibility_date = "2025-01-01"
 
 [assets]
+binding = "ASSETS"
+run_worker_first = ["/api-studio/v1/*"]
 directory = "./public"
 not_found_handling = "404-page"
